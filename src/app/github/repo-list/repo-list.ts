@@ -1,14 +1,14 @@
 import {Component, OnInit} from '@angular/core';
 import {Github} from '../shared/github';
 import {Observable} from 'rxjs/Observable';
-import {ROUTER_DIRECTIVES, ActivatedRoute} from '@angular/router';
+import {ActivatedRoute} from '@angular/router';
 
 @Component({
   selector: 'repo-list',
   styleUrls: ['./repo-list.css'],
   templateUrl: './repo-list.html',
 })
-export class RepoListComponent implements OnInit {
+export class RepoList implements OnInit {
   org: string;
   repos: Observable<any>;
 

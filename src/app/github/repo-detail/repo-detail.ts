@@ -1,5 +1,5 @@
 import {Component, OnInit} from '@angular/core';
-import {ROUTER_DIRECTIVES, ActivatedRoute, Router} from '@angular/router';
+import {ActivatedRoute} from '@angular/router';
 import {Github} from '../shared/github';
 
 @Component({
@@ -7,17 +7,17 @@ import {Github} from '../shared/github';
   styleUrls: ['./repo-detail.css'],
   templateUrl: './repo-detail.html'
 })
-export class RepoDetailComponent implements OnInit {
+export class RepoDetail implements OnInit {
   private org:string;
   private repo:string;
   public repoDetails:any = {};
 
-  constructor(public github:Github, private router:Router, private route:ActivatedRoute) {
+  constructor(public github:Github, private route:ActivatedRoute) {
   }
 
   ngOnInit() {
     this.route.params.subscribe(params => {
-      this.org = this.router.routerState.parent(this.route).snapshot.params['org'];
+      this.org = this.route.snapshot.parent.params['org'];
       this.repo = params['repo'] || '';
 
       if (this.repo) {

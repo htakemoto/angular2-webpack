@@ -7,9 +7,10 @@ import { Github } from '../shared/github';
   templateUrl: './repo-browser.html',
   styleUrls: ['./repo-browser.css']
 })
-export class RepoBrowserComponent {
+export class RepoBrowser {
 
-  constructor(private router: Router, private github: Github) {}
+  constructor(private router: Router, private github: Github) {
+  }
 
   searchForOrg(orgName: string) {
     this.github.getOrg(orgName)
