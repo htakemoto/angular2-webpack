@@ -15,5 +15,6 @@
     "node_modules"
   ],
   "compileOnSave": false,
-  "buildOnSave": false
+  "buildOnSave": false,
+  "typeRoots": [ "node_modules/@types/" ]
 }

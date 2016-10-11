@@ -18,11 +18,3 @@ import 'rxjs/Rx';
 import 'jquery';
 import 'bootstrap/dist/js/bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
-
-
-// typings install dt~jquery --global --save
-// typings install dt~bootstrap --global --save
-$(function () {
-  $('[data-toggle="popover"]').popover();
-  $('[data-toggle="tooltip"]').tooltip();
-});
