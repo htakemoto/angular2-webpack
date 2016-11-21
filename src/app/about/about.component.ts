@@ -1,11 +1,11 @@
-import {Component, AfterViewInit} from '@angular/core';
+import { Component, AfterViewInit } from '@angular/core';
 
 @Component({
-  selector: 'about',
-  styleUrls: ['./about.css'],
-  templateUrl: './about.html'
+    selector: 'about',
+    styleUrls: ['./about.component.css'],
+    templateUrl: './about.component.html'
 })
-export class About implements AfterViewInit {
+export class AboutComponent implements AfterViewInit {
     constructor() {
     }
 

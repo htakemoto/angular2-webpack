@@ -17,10 +17,6 @@
     "@angular/platform-browser-dynamic": "2.1.0",
     "@angular/platform-server": "2.1.0",
     "@angular/router": "3.1.0",
-    "@types/bootstrap": "3.3.32",
-    "@types/core-js": "^0.9.34",
-    "@types/jquery": "^2.0.33",
-    "@types/node": "^6.0.45",
     "bootstrap": "^3.3.7",
     "core-js": "^2.4.1",
     "jquery": "^3.1.1",
@@ -30,6 +26,10 @@
     "angular-in-memory-web-api": "~0.1.7"
   },
   "devDependencies": {
+    "@types/bootstrap": "3.3.32",
+    "@types/core-js": "^0.9.34",
+    "@types/jquery": "^2.0.33",
+    "@types/node": "^6.0.45",
     "angular2-template-loader": "^0.5.0",
     "awesome-typescript-loader": "^2.2.4",
     "css-loader": "^0.25.0",
